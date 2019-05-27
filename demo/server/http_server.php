@@ -5,6 +5,7 @@
  * Date: 18/2/28
  * Time: 上午1:39
  */
+use Swoole\Coroutine as co;
 $http = new swoole_http_server("0.0.0.0", 8811);
 
 
@@ -35,10 +36,19 @@ $http->on('request', function($request, $response) {
         'post:' => $request->post,
         'header:' => $request->header,
     ];
-
+//    异步回调方式写文件：swoole低版本用法
 //    swoole_async_writefile(__DIR__."/access.log", json_encode($content).PHP_EOL, function($filename){
 //        // todo
 //    }, FILE_APPEND);
+
+//    swoole高版本用法异步回调  swoole>4.0.0  协程方式
+    $filename = __DIR__ . "/access.log";
+    co::create(function () use ($filename,$content)
+    {
+        $r =  co::writeFile($filename,json_encode($content).PHP_EOL,FILE_APPEND);
+//        var_dump($r);
+    });
+
     $response->cookie("singwa", "xsssss", time() + 1800);
     $response->end("sss". json_encode($request->get));
 });
