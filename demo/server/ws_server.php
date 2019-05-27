@@ -6,12 +6,12 @@
  * Time: 下午11:45
  */
 
-$server = new swoole_websocket_server("0.0.0.0", 8812);
+$server = new swoole_websocket_server("0.0.0 .0", 8812);
 //$server->set([]);
 $server->set(
     [
         'enable_static_handler' => true,
-        'document_root' => "/home/work/hdtocs/swoole_mooc/data",
+        'document_root' => "/Users/yin/project/swoole-renew/data",
     ]
 );
 //监听websocket连接打开事件
