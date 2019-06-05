@@ -6,6 +6,9 @@ use app\common\lib\Redis;
 use app\common\lib\redis\Predis;
 class Login
 {
+    /**
+     * 发送验证码
+     */
     public function index() {
         // phone code
         $phoneNum = intval($_GET['phone_num']);

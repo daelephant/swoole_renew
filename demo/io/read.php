@@ -10,8 +10,8 @@
  * 读取文件
  * __DIR__
  */
-$result = Swoole\Async::readfile(__DIR__."/1.txt", function($filename, $fileContent) {
-    echo "filename:".$filename.PHP_EOL;  // \n \r\n
+$result = swoole_async_readfile(__DIR__."/1.txt", function($filename, $fileContent) {
+    echo "filename:".$filename.PHP_EOL;  // \n \r\n  PHP的换行符
     echo "content:".$fileContent.PHP_EOL;
 });
 

@@ -16,19 +16,20 @@ $urls = [
     'http://baidu.com?search=singwa2',
     'http://baidu.com?search=imooc',
 ];
-
+//创建多个子进程分别模拟请求URL的内容
 for($i = 0; $i < 6; $i++) {
     // 子进程
     $process = new swoole_process(function(swoole_process $worker) use($i, $urls) {
         // curl
         $content = curlData($urls[$i]);
         //echo $content.PHP_EOL;
+        //将内容写入管道
         $worker->write($content.PHP_EOL);
     }, true);
     $pid = $process->start();
     $workers[$pid] = $process;
 }
-
+//获取管道内容
 foreach($workers as $process) {
     echo $process->read();
 }

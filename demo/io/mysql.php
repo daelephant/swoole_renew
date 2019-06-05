@@ -21,9 +21,9 @@ class AysMysql {
 
         $this->dbConfig = [
             'host' => '127.0.0.1',
-            'port' => 5123,
+            'port' => 3306,
             'user' => 'root',
-            'password' => 123456,
+            'password' => '',
             'database' => 'swoole',
             'charset' => 'utf8',
         ];
@@ -80,9 +80,9 @@ $flag = $obj->execute(1, 'singwa-111112');
 var_dump($flag).PHP_EOL;
 echo "start".PHP_EOL;
 
-for($i=0; $i<900000;$i++) {
-    echo $i.PHP_EOL;
-}
+//for($i=0; $i<900000;$i++) {
+//    echo $i.PHP_EOL;
+//}
 
 // 详情页 -》mysql(阅读数) -》msyql 文章 +1 -》页面数据呈现出来
 
