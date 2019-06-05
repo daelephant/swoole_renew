@@ -72,6 +72,8 @@ class Predis {
     }
 
     /**
+     * 调用不存在的方法，则执行该魔术方法。适用于基础类库的封装
+     * 需要传入方法名和参数
      * @param $name
      * @param $arguments
      * @return array
