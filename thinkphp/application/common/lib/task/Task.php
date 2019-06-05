@@ -13,7 +13,7 @@ class Task {
     /**
      * 异步发送 验证码
      * @param $data
-     * @param $serv swoole server对象
+     * @param $serv swoole server对象 服务对象
      */
     public function sendSms($data, $serv) {
         try {
@@ -38,7 +38,7 @@ class Task {
      * @param $serv swoole server对象
      */
     public function pushLive($data, $serv) {
-        $clients = Predis::getInstance()->sMembers(config("redis.live_game_key"));
+        $clients = Predis::getInstance()->sMembers(config("redis.live_game_key"));//获取所有用户
 
         foreach($clients as $fd) {
             $serv->push($fd, json_encode($data));

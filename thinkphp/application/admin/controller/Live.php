@@ -9,6 +9,7 @@ class Live
         if(empty($_GET)) {
             return Util::show(config('code.error'), 'error');
         }  // admin
+        //TODO list 增加验证、从mysql读出数据
         // token    md5(content)
         // => mysql
         $teams = [
