@@ -14,7 +14,7 @@ class Chart
         }
 
         $data = [
-            'user' => "用户".rand(0, 2000),
+            'user' => "用户".rand(0, 2000),//此处为测试、获取用户名
             'content' => $_POST['content'],
         ];
         //  todo
