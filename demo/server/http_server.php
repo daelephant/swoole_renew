@@ -25,7 +25,7 @@ $http = new swoole_http_server("0.0.0.0", 8811);
 $http->set(
     [
         'enable_static_handler' => true,
-        'document_root' => "/Users/yin/project/swoole-renew/data",
+        'document_root' => "/home/work/swoole-renew/data",
     ]
 );
 $http->on('request', function($request, $response) {
@@ -37,17 +37,17 @@ $http->on('request', function($request, $response) {
         'header:' => $request->header,
     ];
 //    异步回调方式写文件：swoole低版本用法
-//    swoole_async_writefile(__DIR__."/access.log", json_encode($content).PHP_EOL, function($filename){
-//        // todo
-//    }, FILE_APPEND);
+    swoole_async_writefile(__DIR__."/access.log", json_encode($content).PHP_EOL, function($filename){
+        // todo
+    }, FILE_APPEND);
 
 //    swoole高版本用法异步回调  swoole>4.0.0  协程方式
-    $filename = __DIR__ . "/access.log";
-    co::create(function () use ($filename,$content)
-    {
-        $r =  co::writeFile($filename,json_encode($content).PHP_EOL,FILE_APPEND);
-//        var_dump($r);
-    });
+//    $filename = __DIR__ . "/access.log";
+//    co::create(function () use ($filename,$content)
+//    {
+//        $r =  co::writeFile($filename,json_encode($content).PHP_EOL,FILE_APPEND);
+////        var_dump($r);
+//    });
 
     $response->cookie("singwa", "xsssss", time() + 1800);
     $response->end("sss". json_encode($request->get));
