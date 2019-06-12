@@ -64,9 +64,9 @@ class Ws {
 
         //投递异步任务
         //注意：程序会继续往下执行，不会等待任务执行完后再继续向下执行
-//        $ws->task($data);
+        $ws->task($data);
         //客户端会马上收到以下信息
-//        $ws->push($frame->fd, "server-push:".date("Y-m-d H:i:s"));
+        $ws->push($frame->fd, "server-push:".date("Y-m-d H:i:s"));
 
 
         //测试异步计时器回调
