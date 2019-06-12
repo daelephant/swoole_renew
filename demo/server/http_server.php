@@ -50,7 +50,7 @@ $http->on('request', function($request, $response) {
 //    });
 
     $response->cookie("singwa", "xsssss", time() + 1800);
-    $response->end("sss". json_encode($request->get));
+    $response->end("elephant". json_encode($request->get));
 });
 
 $http->start();
