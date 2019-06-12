@@ -19,8 +19,11 @@ class Ws {
             [
                 'worker_num' => 2,
                 'task_worker_num' => 2,
+                'enable_static_handler' => true,
+                'document_root' => "/home/work/swoole_renew/data",
             ]
         );
+
         //注册Server的事件回调函数
         $this->ws->on("open", [$this, 'onOpen']);
         $this->ws->on("message", [$this, 'onMessage']);
