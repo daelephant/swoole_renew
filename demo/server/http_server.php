@@ -25,7 +25,7 @@ $http = new swoole_http_server("0.0.0.0", 8811);
 $http->set(
     [
         'enable_static_handler' => true,
-        'document_root' => "/home/work/swoole-renew/data",
+        'document_root' => "/home/work/swoole_renew/data",
     ]
 );
 $http->on('request', function($request, $response) {
