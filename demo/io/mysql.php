@@ -23,7 +23,7 @@ class AysMysql {
             'host' => '127.0.0.1',
             'port' => 3306,
             'user' => 'root',
-            'password' => '',
+            'password' => 'Cyx.2018',
             'database' => 'swoole',
             'charset' => 'utf8',
         ];
@@ -76,7 +76,7 @@ class AysMysql {
     }
 }
 $obj = new AysMysql();
-$flag = $obj->execute(1, 'singwa-111112');
+$flag = $obj->execute(1, 'elephant-111112');
 var_dump($flag).PHP_EOL;
 echo "start".PHP_EOL;
 
