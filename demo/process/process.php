@@ -8,7 +8,7 @@
 $process = new swoole_process(function(swoole_process $pro) {
     // todo
     // php redis.php
-    $pro->exec("/Users/yin/project/study/soft/php/bin/php", [__DIR__.'/../server/http_server.php']);
+    $pro->exec("/home/study/php/bin/php", [__DIR__.'/../server/http_server.php']);
 }, false);
 
 $pid = $process->start();
