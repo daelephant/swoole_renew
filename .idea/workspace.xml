@@ -29,8 +29,8 @@
       <file leaf-file-name="http_server.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thinkphp/script/bin/server/http_server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="171">
+              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -178,6 +178,33 @@
               <item name="swoole-renew" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="thinkphp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="swoole_mooc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swoole-renew" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="thinkphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="script" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="swoole_mooc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swoole-renew" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="thinkphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="script" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="swoole_mooc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swoole-renew" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="thinkphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="script" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="swoole_mooc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="swoole-renew" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="thinkphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="thinkphp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -267,12 +294,12 @@
       <workItem from="1558789969600" duration="285000" />
       <workItem from="1558858246570" duration="2367000" />
       <workItem from="1558925236021" duration="45476000" />
-      <workItem from="1559704000963" duration="32159000" />
+      <workItem from="1559704000963" duration="32440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85143000" />
+    <option name="totallyTimeSpent" value="85424000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/script/bin/server/http_server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="171">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding />
         </state>
       </provider>
