@@ -36,6 +36,7 @@ class Send
 //        return Util::show(config('code.success'), 'ok');
         try {
             $response = $Sms->sendSms($phoneNum, $code ,$expire);
+            echo $response;
         }catch (\Exception $e) {
             // todo
             return Util::show(config('code.error'), '短信第三方内部异常');
