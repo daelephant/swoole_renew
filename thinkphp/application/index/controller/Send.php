@@ -10,6 +10,7 @@ class Send
      * 发送验证码
      */
     public function index() {
+        $Sms = new Sms();
         // tp  input
         //$phoneNum = request()->get('phone_num', 0, 'intval');
         $phoneNum = intval($_GET['phone_num']);
@@ -23,34 +24,34 @@ class Send
         $code = rand(1000, 9999);
         $expire = 10;//有效时长10分钟
 
-        $taskData = [
-            'method' => 'sendSms',
-            'data' => [
-                'phone' => $phoneNum,
-                'code' => $code,
-                'expire' => $expire
-            ]
-        ];
-        $_POST['http_server']->task($taskData);
-        return Util::show(config('code.success'), 'ok');
-        /*try {
-            $response = Sms::sendSms($phoneNum, $code);
+//        $taskData = [
+//            'method' => 'sendSms',
+//            'data' => [
+//                'phone' => $phoneNum,
+//                'code' => $code,
+//                'expire' => $expire
+//            ]
+//        ];
+//        $_POST['http_server']->task($taskData);
+//        return Util::show(config('code.success'), 'ok');
+        try {
+            $response = $Sms->sendSms($phoneNum, $code ,$expire);
         }catch (\Exception $e) {
             // todo
-            return Util::show(config('code.error'), '阿里大于内部异常');
-        }*/
-        //if($response->Code === "OK") {
+            return Util::show(config('code.error'), '短信第三方内部异常');
+        }
+        if($response->errmsg === "OK") {
             // redis
-            /*$redis = new \Swoole\Coroutine\Redis();
+            $redis = new \Swoole\Coroutine\Redis();
             $redis->connect(config('redis.host'), config('redis.port'));
-            $redis->set(Redis::smsKey($phoneNum), $code, config('redis.out_time'));*/
+            $redis->set(Redis::smsKey($phoneNum), $code, config('redis.out_time'));
 
             // 异步redis
 
-            //return Util::show(config('code.success'), 'success');
-        //} else {
-           // return Util::show(config('code.error'), '验证码发送失败');
-        //}
+            return Util::show(config('code.success'), 'success');
+        } else {
+            return Util::show(config('code.error'), '验证码发送失败');
+        }
 
     }
 }
