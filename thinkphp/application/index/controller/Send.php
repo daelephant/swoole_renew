@@ -1,6 +1,7 @@
 <?php
 namespace app\index\controller;
-use app\common\lib\ali\Sms;
+//use app\common\lib\ali\Sms;
+use app\common\lib\qcloud\Sms;
 use app\common\lib\Util;
 use app\common\lib\Redis;
 class Send
@@ -20,12 +21,14 @@ class Send
         //tood
         // 生成一个随机数
         $code = rand(1000, 9999);
+        $expire = 10;//有效时长10分钟
 
         $taskData = [
             'method' => 'sendSms',
             'data' => [
                 'phone' => $phoneNum,
                 'code' => $code,
+                'expire' => $expire
             ]
         ];
         $_POST['http_server']->task($taskData);

@@ -5,7 +5,8 @@
  * Time: 上午1:20
  */
 namespace app\common\lib\task;
-use app\common\lib\ali\Sms;
+//use app\common\lib\ali\Sms;
+use app\common\lib\qcloud\Sms;
 use app\common\lib\redis\Predis;
 use app\common\lib\Redis;
 class Task {
@@ -17,14 +18,15 @@ class Task {
      */
     public function sendSms($data, $serv) {
         try {
-            $response = Sms::sendSms($data['phone'], $data['code']);
+            $Sms = new Sms();
+            $response = $Sms->sendSms($data['phone'], $data['code'], $data['expire']);
         }catch (\Exception $e) {
             // todo
             return false;
         }
 
         // 如果发送成功 把验证码记录到redis里面
-        if($response->Code === "OK") {
+        if($response->errmsg === "OK") {
             Predis::getInstance()->set(Redis::smsKey($data['phone']), $data['code'], config('redis.out_time'));
         }else {
             return false;
