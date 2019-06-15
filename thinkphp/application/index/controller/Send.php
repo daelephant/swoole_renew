@@ -36,12 +36,7 @@ class Send
 //        return Util::show(config('code.success'), 'ok');
         try {
             $response = $Sms->sendSms($phoneNum, $code ,$expire);
-            $content = date("Ymd H:i:s").$response.$response[0].$response[1].PHP_EOL;
-            swoole_async_writefile(__DIR__."/runTime.log", $content, function($filename){
-                // todo
-                echo "success".PHP_EOL;
-            }, FILE_APPEND);
-
+            echo $response;
         }catch (\Exception $e) {
             // todo
             return Util::show(config('code.error'), '短信第三方内部异常');
