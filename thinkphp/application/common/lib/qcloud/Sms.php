@@ -6,7 +6,7 @@
  * Time: 23:16
  */
 namespace app\common\lib\qcloud;
-require_once APP_PATH . 'extend/qcloudsms/src/index.php';
+require_once APP_PATH . '/../extend/qcloudsms/src/index.php';
 use Qcloud\Sms\SmsSingleSender;
 
 //发送短信
@@ -44,5 +44,7 @@ class Sms
         } catch (\Exception $e) {
             echo var_dump($e);
         }
+
     }
+
 }
