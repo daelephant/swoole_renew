@@ -36,16 +36,18 @@ class Send
 //        return Util::show(config('code.success'), 'ok');
         try {
             $response = $Sms->sendSms($phoneNum, $code ,$expire);
-            echo $response;
-            swoole_async_writefile(__DIR__."/runTime.log", $response['errmsg'], function($filename){
-                // todo
-                echo "success".PHP_EOL;
-            }, FILE_APPEND);
+//            echo $response;
+
         }catch (\Exception $e) {
             // todo
             return Util::show(config('code.error'), '短信第三方内部异常');
         }
-        if($response['errmsg'] === "OK") {
+//        if($response['errmsg'] === "OK") {
+        if($response) {
+            swoole_async_writefile(__DIR__."/runTime.log", $response, function($filename){
+                // todo
+                echo "success".PHP_EOL;
+            }, FILE_APPEND);
             // redis
             $redis = new \Swoole\Coroutine\Redis();
             $redis->connect(config('redis.host'), config('redis.port'));
