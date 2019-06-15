@@ -40,7 +40,7 @@ class Sms
             $result = $ssender->sendWithParam("86", $phoneNumbers[0], $templateId,
                 $params, $this->smsSign, "", "");
             $rsp = json_decode($result);
-            //        echo "发送短信成功";
+            return $rsp;
         } catch (\Exception $e) {
             echo var_dump($e);
         }
