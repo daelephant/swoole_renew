@@ -42,11 +42,9 @@ class Send
             // todo
             return Util::show(config('code.error'), '短信第三方内部异常');
         }
+        var_dump($response);
 //        if($response['errmsg'] === "OK") {
         if($response) {
-
-            echo $response;
-            echo  'ok';
 
 //            $keys = key($responseo);
 //            swoole_async_writefile(__DIR__."/runTime.log",$keys, function($filename){
