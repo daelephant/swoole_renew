@@ -5,8 +5,8 @@ class Index
 {
     public function index()
     {
-//        return  '1234';
-        echo time();
+        return  '';
+//        echo time();
     }
 
     public function singwa() {
