@@ -24,7 +24,7 @@ class Login
             echo $e->getMessage();
         }
 
-        echo $redisCode;
+//        echo $redisCode;
         if($redisCode == $code) {
             // 写入redis
             $data = [
