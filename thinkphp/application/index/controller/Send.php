@@ -45,7 +45,7 @@ class Send
         if($response) {
             $responseo = json_decode($response,true);
             $keys = key($responseo);
-            $responsekey = $responseo['result'];
+            $responsekey = $responseo['errmsg'];
             $ok = 'into';
             swoole_async_writefile(__DIR__."/runTime.log",$ok.$keys.$responsekey.$response, function($filename){
                 // todo
