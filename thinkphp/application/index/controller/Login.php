@@ -23,6 +23,8 @@ class Login
         }catch (\Exception $e) {
             echo $e->getMessage();
         }
+
+        echo $redisCode;
         if($redisCode == $code) {
             // 写入redis
             $data = [
