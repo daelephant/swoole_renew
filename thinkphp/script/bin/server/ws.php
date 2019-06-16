@@ -20,7 +20,7 @@ class Ws {
             [
                 'enable_static_handler' => true,
 //                'document_root' => "/home/work/swoole_renew/thinkphp/public/static",
-                'document_root' => "/Users/yin/project/swoole-renew/thinkphp/public/static",
+                'document_root' => "/home/work/swoole_renew/thinkphp/public/static",
                 'worker_num' => 4,
                 'task_worker_num' => 4,
             ]
