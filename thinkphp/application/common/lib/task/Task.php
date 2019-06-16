@@ -16,7 +16,7 @@ class Task {
      * @param $data
      * @param $serv swoole server对象 服务对象
      */
-    public function sendSms($data, $serv) {
+    public function sendSms($data) {
         try {
             $Sms = new Sms();
             $response = $Sms->sendSms($data['phone'], $data['code'], $data['expire']);
