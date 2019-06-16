@@ -43,11 +43,12 @@ class Send
         }
         $responseArray = json_decode($response,true);
         if($responseArray['errmsg'] === 'OK') {
-            $ok = 'into';
-            swoole_async_writefile(__DIR__."/runTime.log",$ok, function($filename){
-                // todo
-                echo "success".PHP_EOL;
-            }, FILE_APPEND);
+            //测试写入日志
+//            $ok = 'into';
+//            swoole_async_writefile(__DIR__."/runTime.log",$ok, function($filename){
+//                // todo
+//                echo "success".PHP_EOL;
+//            }, FILE_APPEND);
             // redis
             $redis = new \Swoole\Coroutine\Redis();
             $redis->connect(config('redis.host'), config('redis.port'));
