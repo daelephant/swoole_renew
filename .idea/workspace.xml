@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ff8fd0c-37b8-49f3-871f-fa86aa3c4490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/thinkphp/application/admin/controller/Live.php" afterPath="$PROJECT_DIR$/thinkphp/application/admin/controller/Live.php" />
       <change beforePath="$PROJECT_DIR$/thinkphp/public/static/live/js/live.js" afterPath="$PROJECT_DIR$/thinkphp/public/static/live/js/live.js" />
     </list>
     <ignored path="swoole_mooc.iws" />
@@ -118,8 +117,8 @@
       <file leaf-file-name="live.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/js/live.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="294">
+              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -250,8 +249,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="578" />
-    <option name="y" value="333" />
+    <option name="x" value="514" />
+    <option name="y" value="375" />
     <option name="width" value="969" />
     <option name="height" value="825" />
   </component>
@@ -431,12 +430,12 @@
       <workItem from="1558789969600" duration="285000" />
       <workItem from="1558858246570" duration="2367000" />
       <workItem from="1558925236021" duration="45476000" />
-      <workItem from="1559704000963" duration="68911000" />
+      <workItem from="1559704000963" duration="69436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121895000" />
+    <option name="totallyTimeSpent" value="122420000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -448,7 +447,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="578" y="333" width="969" height="825" extended-state="0" />
+    <frame x="514" y="375" width="969" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292232" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -456,7 +455,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292232" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26610646" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.206041" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.206041" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -511,7 +510,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -651,7 +650,7 @@
         <state relative-caret-position="1845">
           <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#133#156#0#PHP" expanded="true" />
+            <element signature="e#133#156#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -773,7 +772,7 @@
         <state relative-caret-position="196">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="16" />
           <folding>
-            <element signature="e#6#83#0#PHP" expanded="true" />
+            <element signature="e#6#83#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -934,8 +933,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/js/live.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="294">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding />
         </state>
       </provider>

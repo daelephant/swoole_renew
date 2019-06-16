@@ -31,11 +31,13 @@ function push(data) {
         '\t\t\t\t\t</h3>\n' +
         '\t\t\t\t\t<div class="frame-item">\n' +
         '\t\t\t\t\t\t<span class="frame-dot"></span>\n' +
-        '\t\t\t\t\t\t<div class="frame-item-author">\n' +
-        '\t\t\t\t\t\t\t<img src="./imgs/team1.png" width="20px" height="20px"> 马刺\n' +
+        '\t\t\t\t\t\t<div class="frame-item-author">\n' ;
+    if(data.logo){
+        html += '\t\\t\\t\\t\\t\\t\\t<img src="+data.logo+" width="20px" height="20px"> ';
+    }
+    html += '\t\t\t\t\t\t\t '+data.title+'\n' +
         '\t\t\t\t\t\t</div>\n' +
-        '\t\t\t\t\t\t<p>08:44 暂停 常规暂停</p>\n' +
-        '\t\t\t\t\t\t<p>08:44 帕克 犯规 个人犯hahah规 2次</p>\n' +
+        '\t\t\t\t\t\t<p>'+data.content+'</p>\n' +
         '\t\t\t\t\t</div>\n' +
         '\t\t\t\t</div>';
     $('#match-result').prepend(html);
