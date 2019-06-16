@@ -37,16 +37,14 @@ class Send
         try {
             $response = $Sms->sendSms($phoneNum, $code ,$expire);
 //            echo $response;
+            var_dump($response);exit;
 
         }catch (\Exception $e) {
             // todo
             return Util::show(config('code.error'), '短信第三方内部异常');
         }
-        if(empty($response)){
-            echo 'empty';exit;
-        }else{
-            var_dump($response);exit;
-        }
+
+
 //        var_dump($response);
 //        if($response['errmsg'] === "OK") {
         if($response) {

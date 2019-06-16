@@ -41,7 +41,7 @@ class Sms
                 $params, $this->smsSign, "", "");
             $rsp = json_decode($result);
             echo $result;
-//            return $result;
+           return $result;
         } catch (\Exception $e) {
             echo var_dump($e);
         }
