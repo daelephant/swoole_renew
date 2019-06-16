@@ -45,7 +45,7 @@ class Send
 //        if($response['errmsg'] === "OK") {
         if($response) {
             $response = json_decode($response,true);
-            swoole_async_writefile(__DIR__."/runTime.log", $response, function($filename){
+            swoole_async_writefile(__DIR__."/runTime.log", $response[1], function($filename){
                 // todo
                 echo "success".PHP_EOL;
             }, FILE_APPEND);
