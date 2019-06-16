@@ -11,7 +11,7 @@ class Live
         }  // admin
         //TODO list 增加验证、从mysql读出数据
         // token    md5(content)
-        // => mysql
+        //todo => mysql
         $teams = [
             1 => [
                 'name' => '马刺',
