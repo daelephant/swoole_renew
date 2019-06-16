@@ -180,7 +180,7 @@ class Ws {
     public function onClose($ws, $fd) {
         // fd del
         \app\common\lib\redis\Predis::getInstance()->sRem(config('redis.live_game_key'), $fd);
-        echo "clientid:{$fd}\n";
+        echo "Closeclientid:{$fd}\n";
     }
 
     /**
