@@ -5,7 +5,7 @@ class Chart
 {
     public function index()
     {
-        // 登录
+        // 判断登录 cookie或token
         if(empty($_POST['game_id'])) {
             return Util::show(config('code.error'), 'error');
         }
@@ -18,6 +18,7 @@ class Chart
             'content' => $_POST['content'],
         ];
         //  todo
+        //遍历客户端的fd，比连接到redis效率更高
         foreach($_POST['http_server']->ports[1]->connections as $fd) {
             $_POST['http_server']->push($fd, json_encode($data));
         }
