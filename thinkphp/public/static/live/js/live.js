@@ -9,7 +9,7 @@ websocket.onopen = function(evt) {
 
 // 实例化 onmessage
 websocket.onmessage = function(evt) {
-    push(evt.data);
+    push_live(evt.data);
     console.log("ws-server-return-data:" + evt.data);
 }
 
@@ -23,7 +23,7 @@ websocket.onerror = function(evt, e) {
     console.log("error:" + evt.data);
 }
 
-function push(data) {
+function push_live(data) {
     data = JSON.parse(data);
     html = '<div class="frame">';
     html += '<h3 class="frame-header">';

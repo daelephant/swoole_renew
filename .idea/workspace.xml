@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ff8fd0c-37b8-49f3-871f-fa86aa3c4490" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/thinkphp/public/static/live/js/live.js" afterPath="$PROJECT_DIR$/thinkphp/public/static/live/js/live.js" />
     </list>
     <ignored path="swoole_mooc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state relative-caret-position="128">
+              <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -89,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="live.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="live.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/js/live.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="200">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -102,8 +103,8 @@
       <file leaf-file-name="chart.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/js/chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="212">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -213,8 +214,8 @@
         <option value="$PROJECT_DIR$/thinkphp/public/static/live/js/chart-push.js" />
         <option value="$PROJECT_DIR$/thinkphp/public/static/live/detail.html" />
         <option value="$PROJECT_DIR$/thinkphp/application/index/controller/Chart.php" />
-        <option value="$PROJECT_DIR$/thinkphp/public/static/live/js/live.js" />
         <option value="$PROJECT_DIR$/thinkphp/public/static/live/js/chart.js" />
+        <option value="$PROJECT_DIR$/thinkphp/public/static/live/js/live.js" />
       </list>
     </option>
   </component>
@@ -415,7 +416,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127576000" />
+    <option name="totallyTimeSpent" value="128498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,14 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/js/chart-push.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -882,16 +875,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="212">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/js/live.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/public/static/live/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding />
         </state>
       </provider>
