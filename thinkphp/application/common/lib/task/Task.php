@@ -26,7 +26,9 @@ class Task {
         }
 
         // 如果发送成功 把验证码记录到redis里面
-        if($response->errmsg === "OK") {
+//        if($response->errmsg === "OK") {
+        $responseArray = json_decode($response,true);
+        if($responseArray['errmsg'] === 'OK') {
             Predis::getInstance()->set(Redis::smsKey($data['phone']), $data['code'], config('redis.out_time'));
         }else {
             return false;
