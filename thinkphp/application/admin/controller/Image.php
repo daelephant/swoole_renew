@@ -9,6 +9,7 @@ class Image
         $file = request()->file('file');
         //当前的地址是wx http服务启动文件的目录，所以要找到合理的位置存储
         $info = $file->move('../../../public/static/upload');
+
         if($info) {
             $data = [
                 'image' => config('live.host')."/upload/".$info->getSaveName(),
