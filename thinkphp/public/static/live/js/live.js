@@ -25,20 +25,20 @@ websocket.onerror = function(evt, e) {
 
 function push(data) {
     data = JSON.parse(data);
-    html = '<div class="frame">\n' +
-        '\t\t\t\t\t<h3 class="frame-header">\n' +
-        '\t\t\t\t\t\t<i class="icon iconfont icon-shijian"></i>第'+data.type+'节 09：30\n' +
-        '\t\t\t\t\t</h3>\n' +
-        '\t\t\t\t\t<div class="frame-item">\n' +
-        '\t\t\t\t\t\t<span class="frame-dot"></span>\n' +
-        '\t\t\t\t\t\t<div class="frame-item-author">\n' ;
+    html = '<div class="frame">';
+    html += '<h3 class="frame-header">';
+    html += '<i class="icon iconfont icon-shijian"></i>第'+data.type+'节 09：30' ;
+    html += '</h3>' ;
+    html += '<div class="frame-item">';
+    html += '<span class="frame-dot"></span>';
+    html += '<div class="frame-item-author">' ;
     if(data.logo){
-        html += '\t\\t\\t\\t\\t\\t\\t<img src="+data.logo+" width="20px" height="20px"> ';
+        html += '<img src="'+data.logo+'" width="20px" height="20px" /> ';
     }
-    html += '\t\t\t\t\t\t\t '+data.title+'\n' +
-        '\t\t\t\t\t\t</div>\n' +
-        '\t\t\t\t\t\t<p>'+data.content+'</p>\n' +
-        '\t\t\t\t\t</div>\n' +
-        '\t\t\t\t</div>';
+    html += data.title;
+    html += '</div>';
+    html += '<p>'+data.content+'</p>';
+    html += '</div>';
+    html += '</div>';
     $('#match-result').prepend(html);
 }
